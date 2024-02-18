@@ -4,10 +4,13 @@ const LogoutButton = () => {
     const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
     const returnTo = 'http://localhost:3000';
 
-    const response = await fetch(`${domain}?client_id=${clientId}&return_to=${returnTo}`, {
-      redirect: 'manual',
-      method: 'GET',
-    });
+    const response = await fetch(
+      `${domain}/v2/logout?client_id=${clientId}&return_to=${returnTo}`,
+      {
+        redirect: 'manual',
+        method: 'GET',
+      }
+    );
 
     window.location.replace(response.url);
   };
