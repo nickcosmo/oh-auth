@@ -34,7 +34,7 @@ const UserRoute = () => {
         })
         .catch((e) => console.log('e :>> ', e));
     }
-  }, [code]);
+  }, [code, setUser, setTokenData]);
 
   const pingTest = async () => {
     if (tokenData) {
