@@ -8,7 +8,7 @@ This is a small practice project to better understand the OAuth and OIDC (OpenID
 - React
 - NestJS
 
-## How does it work
+## How It Works
 
 This utilizes the [Authorization Code Flow with Proof Key for Code Exchange](https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow-with-pkce) when interacting with Auth0. This process allows the frontend app to obtain an access token which can be used do authenticate users in the backend app which includes user permissions and an id token which contains information about the user.
 
